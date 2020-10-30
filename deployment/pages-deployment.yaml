@@ -24,7 +24,8 @@ spec:
           hostPath:
             path: /angel
       containers:
-        - image: ongchaojian/pages:monitor
+        - image: ongchaojian/pages:distributed
+          imagePullPolicy: Always
           name: pages
           ports:
             - containerPort: 8080
